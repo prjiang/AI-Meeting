@@ -15,3 +15,9 @@
 [RaspberryPi-Webcam]()
 
   > This is how to setup a Webcam for Raspberry Pi.
+
+<br>
+
+[RealTimeFaceDetection](https://github.com/prjiang/RealTimeFaceDetection)
+
+  > OpenCV and Haarcascade for simple face detection using the webcam.
