@@ -8,7 +8,7 @@
 
     * [梯度下降，神經網絡如何學習 l 第二章 深度學習](https://www.youtube.com/watch?v=IHZwWFHWa-w&ab_channel=3Blue1Brown)
 
-    * [什麼是反向傳播演算法？| 深度學習，第3章](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=10s&ab_channel=3Blue1Brown)
+    * [什麼是反向傳播演算法？ l 深度學習，第3章](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=10s&ab_channel=3Blue1Brown)
 
 * Tutorials
 
