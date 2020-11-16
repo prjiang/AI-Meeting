@@ -4,7 +4,9 @@
 
 [RaspberryPi-RPiMonitor](https://github.com/prjiang/RaspberryPi-RPiMonitor)
 
-   > Real time monitoring for embedded devices.
+   > Real time monitoring for Raspberry Pi.
+   
+<br>
 
 ## Materials
 
