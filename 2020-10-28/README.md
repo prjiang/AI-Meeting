@@ -25,3 +25,5 @@
     * [tensorflow2_tutorials_chinese](https://github.com/czy36mengfei/tensorflow2_tutorials_chinese)
 
     * [TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)
+
+    * [Machine Learning（by Google）系列](https://ithelp.ithome.com.tw/users/20103826/ironman/2779)
