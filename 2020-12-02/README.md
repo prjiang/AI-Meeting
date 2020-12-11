@@ -6,6 +6,8 @@
 
 * [Gender-Voice](https://github.com/prjiang/AI-Seminar/blob/main/2020-12-02/GenderVoice-TensorFlowProgramming.ipynb)
 
+<hr>
+
 ## Materials
 
 * [Why do we need Cross Entropy loss](https://www.youtube.com/embed/gIx974WtVb4)
