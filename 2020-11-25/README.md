@@ -2,4 +2,4 @@
 
 ## Discuss
 
-Discuss and resolve TensorFlow programming issues.
+* Discuss and resolve TensorFlow programming issues.
