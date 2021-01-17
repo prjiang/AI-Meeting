@@ -2,4 +2,4 @@
 ## Discuss
 * The theme feasibility of College Student Research Scholarship, NSC.
 
-* The final exam operating questions for the relevant course.
+* The final exam operating questions for Artificial Intelligence course.
