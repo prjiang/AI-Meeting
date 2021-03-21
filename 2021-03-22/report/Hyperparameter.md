@@ -9,7 +9,7 @@
 ## Hyperparameter
 訓練 model 前<b>手動設置的</b>，其值無法從數據估計得到。其為使訓練模型時表現得更出色。
 
-* learning rate、batch size、layers、hidden units
+* η (learning rate)、λ (正規化參數)、layers、hidden units、Epoch、minibatch
 
 <br>
 
