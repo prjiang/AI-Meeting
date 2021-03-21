@@ -4,6 +4,8 @@
 
 * Optimization methods in Neural Network.
 
+<br>
+
 ## Prepare the reports
 * Use Keras or TensorFlow for three data classification applications.
 
