@@ -22,19 +22,22 @@
 <br>
 
 ### Hyperparameter 調校
+
+<hr>
+
 #### Random Sample :
 
-#### Machine Learning
+#### - *Machine Learning*
 機器學習，將每個參數等距以格子法選取任意個數的點 (圖一)。
 
 然後，分別使用不同點對應的參數組合進行系統化訓練，最後根據驗證集上的表現好壞，來決定最佳參數。
 
 <img src='img/ML-Hyperparameter.png'>   圖一
 
-#### Deep Learning
+#### - *Deep Learning*
 深度神經網絡模型中，比較好的做法是隨機選擇 (圖二)。
 
-原因為:
+原因為 :
 1. 我們無法預先知道那些參數對網絡有較大的影響。
 2. 再者，隨機選取的方式，則可確保我們儘量測試到更多可能的參數。
 
@@ -46,16 +49,16 @@
 
 <img src='img/DL-Hyperparameter02.png'> 圖三
 
-<hr>
+<br>
 
 #### Using an appropriate scale to pick hyperparameters
 
-#### Linear Scale
+#### - *Linear Scale*
 有些超參數可以進行尺度均勻採樣。
 
 例如 : layers、hidden units，其為正整數，可進行均勻隨機採樣。
 
-#### Log Scale
+#### - *Log Scale*
 有些超參數需要非均勻隨機採樣。
 
 例如 : η 的待調範圍是 [0.0001, 1]。假設其最佳值分布於 [0.0001, 0.1]，而 [0.1, 1] 效果差。
@@ -64,9 +67,12 @@
 
 <img src='img/Scale.png'> 圖四
 
-<hr>
+<br>
 
 ### Hyperparameters tuning in practice: Pandas vs. Caviar
+
+<hr>
+
 經調校選擇完最佳的超參數，並不是一成不變，在一段時間之後，需要根據新數據和實際情況，再次調整超參數，以獲得當時最佳模型。
 
  因此，在訓練深度神經網絡時，通常會考量計算能力，進行以下兩種方式訓練模型:
@@ -77,5 +83,6 @@
 
 <br>
 
-### Reference
+## Reference
+
 > [Ray Lin (2018) "Hyperparameter tuning"](https://medium.com/%E5%AD%B8%E4%BB%A5%E5%BB%A3%E6%89%8D/hyperparameter-tuning-df25ebaa36da)
