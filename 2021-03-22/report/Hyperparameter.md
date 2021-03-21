@@ -21,7 +21,7 @@
 
 <br>
 
-### Hyperparameter 調校順序
+### Hyperparameter 調校
 #### Random Sample
 
 <hr>
