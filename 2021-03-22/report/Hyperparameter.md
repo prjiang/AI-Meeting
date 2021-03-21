@@ -22,9 +22,7 @@
 <br>
 
 ### Hyperparameter 調校
-#### Random Sample
-
-<hr>
+#### Random Sample :
 
 #### Machine Learning
 機器學習，將每個參數等距以格子法選取任意個數的點 (圖一)。
@@ -48,11 +46,9 @@
 
 <img src='img/DL-Hyperparameter02.png'> 圖三
 
-<br>
+<hr>
 
 #### Using an appropriate scale to pick hyperparameters
-
-<hr>
 
 #### Linear Scale
 有些超參數可以進行尺度均勻採樣。
@@ -68,7 +64,7 @@
 
 <img src='img/Scale.png'> 圖四
 
-<br>
+<hr>
 
 ### Hyperparameters tuning in practice: Pandas vs. Caviar
 經調校選擇完最佳的超參數，並不是一成不變，在一段時間之後，需要根據新數據和實際情況，再次調整超參數，以獲得當時最佳模型。
