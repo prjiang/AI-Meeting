@@ -53,12 +53,12 @@
 
 #### Using an appropriate scale to pick hyperparameters :
 
-#### - *Linear Scale*
+#### *Linear Scale*
 有些超參數可以進行尺度均勻採樣。
 
 例如 : layers、hidden units，其為正整數，可進行均勻隨機採樣。
 
-#### - *Log Scale*
+#### *Log Scale*
 有些超參數需要非均勻隨機採樣。
 
 例如 : η 的待調範圍是 [0.0001, 1]。假設其最佳值分布於 [0.0001, 0.1]，而 [0.1, 1] 效果差。
