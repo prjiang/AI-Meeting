@@ -51,7 +51,7 @@
 
 <br>
 
-#### Using an appropriate scale to pick hyperparameters
+#### Using an appropriate scale to pick hyperparameters :
 
 #### - *Linear Scale*
 有些超參數可以進行尺度均勻採樣。
