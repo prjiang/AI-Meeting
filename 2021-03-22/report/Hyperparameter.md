@@ -65,6 +65,8 @@
 
 將 linear scale 轉換為 log scale 後，再進行均勻採樣 (圖四)。
 
+其於 [0.0001, 0.1] 區間內的超參數採樣個數大於 linear scale 在該區間內的採樣個數。
+
 <img src='img/Scale.png'> 圖四
 
 <br>
