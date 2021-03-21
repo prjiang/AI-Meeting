@@ -9,7 +9,7 @@
 ## Hyperparameter
 訓練 model 前<b>手動設置的</b>，其值無法從數據估計得到。其為使訓練模型時表現得更出色。
 
-* learning rate、迭代次數、層數、neuron 個數
+* learning rate、batch size、layers、hidden units
 
 <br>
 
