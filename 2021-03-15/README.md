@@ -9,7 +9,7 @@
 ## Prepare the reports
 * Use Keras or TensorFlow for three data classification applications.
 
-* What is a hyper parameter?
+* What is a Hyperparameter?
 
 * What is the Entropy and Cross Entropy?
 
