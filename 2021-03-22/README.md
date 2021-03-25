@@ -5,3 +5,6 @@
 * What is the Entropy and Cross Entropy?
 
 ## Prepare the reports
+* Iris Classification using Tensorflow.
+
+* Cats and dogs Classification using TensorFlow.
