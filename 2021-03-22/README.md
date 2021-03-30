@@ -5,6 +5,10 @@
 * What is the Entropy and Cross Entropy?
 
 ## Prepare the reports
-* Iris Classification using Tensorflow.
+* Iris Classification using Tensorflow or Keras.
 
-* Cats and dogs Classification using TensorFlow.
+* Cats and dogs Classification using TensorFlow or Keras.
+
+* Continue to learn about CNN.
+
+* Start executing the College Student Research Scholarship, NSC.
