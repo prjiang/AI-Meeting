@@ -1,4 +1,5 @@
 # Keras API reference about The Model class
+## The Model class 
 | Method | Description |
 | --- | --- |
 | features.get_shape | 取得每個 batch_size 的 features 張量 |
@@ -9,3 +10,8 @@
 | model.summary() | 取得模型摘要的資訊 |
 | model.get_config() | 取得模型建置資料的字典 |
 | model.get_weights() | 取得模型的權重 |
+
+<br>
+
+## Reference
+> [The Model class](https://keras.io/api/models/model/)
