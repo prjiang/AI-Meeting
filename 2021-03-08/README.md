@@ -3,7 +3,7 @@
 * What is a Neural Network?
 
 * [The architecture of the Convolutional Neural Network. (Convolution, Max Pooling)](https://github.com/prjiang/Seminar-in-AI/blob/main/2021-03-08/report/CNN%20architecture(Convolution%2C%20Max%20Pooling).pdf)
-Reference: [李宏毅【機器學習2021】卷積神經網路 (Convolutional Neural Networks, CNN)](https://www.youtube.com/watch?v=OP5HcXJg2Aw)
+\Reference: [李宏毅【機器學習2021】卷積神經網路 (Convolutional Neural Networks, CNN)](https://www.youtube.com/watch?v=OP5HcXJg2Aw)
 
 
 <br>
