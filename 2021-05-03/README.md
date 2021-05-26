@@ -3,5 +3,7 @@
 * The Kaggle competition "Titanic - Machine Learning from Disaster".
 * Computer Vision and OpenCV.
 
+<br>
+
 ## Prepare the report
 * Understand the Random Forest model and use others model to run the "Titanic" project.
