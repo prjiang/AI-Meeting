@@ -4,6 +4,8 @@
 
 * What is the Entropy and Cross Entropy?
 
+<br>
+
 ## Prepare the reports
 * Iris Classification using Tensorflow or Keras.
 
