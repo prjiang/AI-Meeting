@@ -42,6 +42,6 @@ mAP: 系統對於所有辨識種類的平均辨識率
 |---|---|
 | ![img3](./img/predict.png) | ![img4](./img/result.png) |
 
-$$ \quad precision \quad = \frac{TP} {TP+FP}
+$$ precision = \frac{TP} {TP+FP}
 
-$$ \quad recall \quad = \frac{TP} {TP+FN}
+$$ recall = \frac{TP} {TP+FN}
