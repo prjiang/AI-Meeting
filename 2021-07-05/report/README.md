@@ -1,6 +1,10 @@
 # The algorithm architecture of YOLO v1: Real Time Object Detection.
 
-## Contents
+You Only Look Once:
+
+Unified, Real-Time Object Detection
+
+## Table of contents
 
 1. [Background](#background)
 
