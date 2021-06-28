@@ -2,6 +2,8 @@
 
 You Only Look Once: Unified, Real-Time Object Detection
 
+<br>
+
 ## Table of contents
 
 * [Background](#background)
