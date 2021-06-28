@@ -42,7 +42,9 @@ YOLO - FPS:45, mAP:63.4
 
 於 Less Than Real-Time 其mAP表現不遜色於其他，且FPS為最高。
 
-![img2](./img/comparison.jpg)
+| Comparison | Error Analysis |
+|---|---|
+| ![img2](./img/comparison.jpg) | ![img2](./img/ErrorAnalysis.jpg) |
 
 #### mAP: 系統對於所有辨識種類的平均辨識率。
 
