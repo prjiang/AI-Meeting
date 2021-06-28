@@ -6,11 +6,15 @@ You Only Look Once: Unified, Real-Time Object Detection
 
 ## Table of contents
 
-* [Background](#background)
+* [Introduce](#introduce)
+    * [Object localization and classification](#Object-localization-and-classification)
+    * [Comparison to Other Real-Time Systems](#Comparison-to-Other-Real-Time-Systems)
+        * [mAP](#mAP)
+* [Algorithm architecture](#Algorithm-architecture)
 
 <br>
 
-## Background
+## Introduce
 
 ### Object localization and classification
 
@@ -63,6 +67,10 @@ recall: 所有真的鴨子，被系統預測正確的比例。
 AP (average precision): 系統預測該類別時(鴨子)的平均辨識率。
 
 mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗、人、車...等等)的平均辨識率。
+
+<br>
+
+## Algorithm architecture
 
 <br>
 
