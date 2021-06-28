@@ -9,7 +9,7 @@ You Only Look Once: Unified, Real-Time Object Detection
 * [Introduce](#introduce)
     * [Object localization and classification](#Object-localization-and-classification)
     * [Comparison to Other Real-Time Systems](#Comparison-to-Other-Real-Time-Systems)
-        * [mAP](#mAP)
+        * [mAP](#mAP-系統對於所有辨識種類的平均辨識率)
 * [Algorithm architecture](#Algorithm-architecture)
 
 <br>
