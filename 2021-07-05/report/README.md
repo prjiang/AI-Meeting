@@ -1,4 +1,4 @@
-# The algorithm architecture of YOLO v1: Real Time Object Detection.
+# Algorithm architecture of YOLO v1: Real Time Object Detection.
 
 You Only Look Once: Unified, Real-Time Object Detection
 
@@ -9,12 +9,23 @@ You Only Look Once: Unified, Real-Time Object Detection
 * [Introduce](#introduce)
     * [Object localization and classification](#Object-localization-and-classification)
     * [Comparison to Other Real-Time Systems](#Comparison-to-Other-Real-Time-Systems)
-        * [mAP](#mAP-系統對於所有辨識種類的平均辨識率)
+        * [mAP](#mAP:-系統對於所有辨識種類的平均辨識率。)
 * [Algorithm architecture](#Algorithm-architecture)
+    * [The Model](#the-model)
+    * [The Architecture](#The-Architecture)
 
 <br>
 
 ## Introduce
+
+### Object Detection
+
+Algorithm of The YOLO Detection System 其流程主要分為三個步驟:
+1. 將影像大小調整至448*448
+2. 執行卷積神經網路進行物件偵測與分類
+3. 透過NMS (Non-max suprresed) 方式框出影像中物件之位置，輸出最終結果
+
+![img0](./img/ObjectDetection.png)
 
 ### Object localization and classification
 
@@ -28,7 +39,7 @@ Object detection 運作步驟 :
 
     ex. RCNN
 
-* one-stage: 輸入之影像透過神經網路同時進行物件偵測與辨識。Single Shot Detector (SSD)，一個深度神經網路便可完成所有物件偵測。運算速度較 one-stage 快，但 performance 相對沒有很好，不過後續研究結構的複雜化使其 performance 愈來愈好甚至超越 two-stage。
+* one-stage: 輸入之影像透過神經網路同時進行物件偵測與辨識。Single Shot Detector (SSD)，一個深度神經網路便可完成所有物件偵測。運算速度較 two-stage 快，但 performance 相對沒有很好，不過後續研究結構的複雜化使其 performance 愈來愈好甚至超越 two-stage。
 
     ex. YOLO
 
@@ -48,7 +59,7 @@ YOLO - FPS:45, mAP:63.4
 
 #### mAP: 系統對於所有辨識種類的平均辨識率。
 
-IOU = 交集a/聯集a，其值介於0~1之間。
+IOU = 交集a / 聯集a，其值介於0~1之間。
 
 一般判斷辨識率以IOU >= 0.5 為基準。
 
@@ -74,9 +85,13 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 
 ## Algorithm architecture
 
+### The Model
+
+### The Architecture
+
 <br>
 
 ## Reference
-* [You Only Look Once:Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
+* [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
 * [深度學習: 物件偵測上的模型結構變化](https://chih-sheng-huang821.medium.com/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC%E4%B8%8A%E7%9A%84%E6%A8%A1%E5%9E%8B%E7%B5%90%E6%A7%8B%E8%AE%8A%E5%8C%96-e23fd928ee59)
 * [影像辨識常見的IOU、AP、mAP是什麼意思?](http://yy-programer.blogspot.com/2020/06/iouapmap.html)
