@@ -80,7 +80,7 @@ recall: 所有真的鴨子，被系統預測正確的比例。
 | predict | result |
 |:---:|:---:|
 | ![img5](./img/predict.png) | ![img6](./img/result.png) |
-| precision | recall |
+| <b>precision</b> | <b>recall</b> |
 | ![img7](./img/precision.png) | ![img8](./img/recall.png) |
 
 AP (average precision): 系統預測該類別時(鴨子)的平均辨識率。
