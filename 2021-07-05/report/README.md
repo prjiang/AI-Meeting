@@ -16,7 +16,7 @@ You Only Look Once: Unified, Real-Time Object Detection
     * [The Architecture](#The-Architecture)
     * [Training](#training)
     * [Loss Function](#loss-function)
-    * [NMS (Non-max suprresed)](#NMS-(Non-max-suprresed))
+    * [NMS (Non-max suprresed)](#NMS-Non-max-suprresed)
 * [Reference](#reference)
 
 <br>
