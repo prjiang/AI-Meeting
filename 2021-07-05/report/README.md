@@ -60,7 +60,7 @@ YOLO - FPS: 45, mAP: 63.4
 於 Less Than Real-Time 其mAP表現不遜色於其他，且FPS為最高。
 
 | Comparison | Error Analysis |
-|---|---|
+|:---:|:---:|
 | ![img2](./img/comparison.jpg) | ![img2](./img/ErrorAnalysis.jpg) |
 
 #### mAP: 系統對於所有辨識種類的平均辨識率。
@@ -70,7 +70,7 @@ IOU = 交集a / 聯集a，其值介於0~1之間。
 一般判斷辨識率以IOU >= 0.5 為基準。
 
 | bounding box | IOU |
-|---|---|
+|:---:|:---:|
 | ![img3](./img/bird.png) | ![img4](./img/IOU.png) |
 
 precision: 所有被系統預測為鴨子的結果中，真的是鴨子的比例。
@@ -78,7 +78,7 @@ precision: 所有被系統預測為鴨子的結果中，真的是鴨子的比例
 recall: 所有真的鴨子，被系統預測正確的比例。
 
 | predict | result |
-|---|---|
+|:---:|:---:|
 | ![img5](./img/predict.png) | ![img6](./img/result.png) |
 | precision | recall |
 | ![img7](./img/precision.png) | ![img8](./img/recall.png) |
@@ -93,7 +93,7 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 
 ### The Model
 
-YOLO會將圖分成S\*S格(grid)，每個grid 有兩個bounding box 做物件偵測，其一開始偵測到的物件有7\*7\*2 = 98個，接著每個grid 會辨識該物件框所框出之物件所屬的類別，最後採用NMS將多餘的bounding box 濾除。
+YOLO會將影像分成S\*S格(grid)，每個grid 有兩個bounding box 做物件偵測，其一開始偵測到的物件有7\*7\*2 = 98個，接著每個grid 會辨識該物件框所框出之物件所屬的類別，最後採用NMS將多餘的bounding box 濾除。
 
 ![img9](./img/detections.png)
 
