@@ -101,6 +101,10 @@ YOLO會將圖分成S\*S格(grid)，每個grid 有兩個bounding box 做物件偵
 
 Grid cell 包含目標的機率與IOU相乘。
 
+Pr(Object) -> bounding box 裡可能是物件的probabilities
+
+Pr(Class | Object) -> 偵測為物件後，該物件所屬類別的probabilities
+
 ![img9](./img/confidence.png)
 
 ### The Architecture
