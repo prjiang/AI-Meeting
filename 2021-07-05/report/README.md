@@ -14,6 +14,9 @@ You Only Look Once: Unified, Real-Time Object Detection
 * [Algorithm architecture](#Algorithm-architecture)
     * [The Model](#the-model)
     * [The Architecture](#The-Architecture)
+    * [Training](#training)
+    * [Loss Function](#loss-function)
+    * [NMS (Non-max suprresed)](#NMS-(Non-max-suprresed))
 * [Reference](#reference)
 
 <br>
@@ -90,6 +93,12 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 ### The Model
 
 ### The Architecture
+
+### Training
+
+### Loss Function
+
+### NMS (Non-max suprresed)
 
 <br>
 
