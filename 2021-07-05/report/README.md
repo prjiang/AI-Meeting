@@ -13,6 +13,7 @@ You Only Look Once: Unified, Real-Time Object Detection
         * [mAP](#mAP-系統對於所有辨識種類的平均辨識率)
 * [Algorithm architecture](#Algorithm-architecture)
     * [The Model](#the-model)
+        * [Confidence](#confidence)
     * [The Architecture](#The-Architecture)
     * [Training](#training)
     * [Loss Function](#loss-function)
@@ -25,7 +26,7 @@ You Only Look Once: Unified, Real-Time Object Detection
 
 ### Object Detection
 
-Algorithm of The YOLO Detection System 其流程主要分為三個步驟:
+Algorithm of The YOLO Detection System 其流程主要分為三個步驟 :
 1. 將影像大小調整至448*448
 2. 執行卷積神經網路進行物件偵測與分類
 3. 透過NMS (Non-max suprresed) 方式框出影像中物件之位置，輸出最終結果
@@ -52,7 +53,7 @@ Object detection 運作步驟 :
 
 ### Comparison to Other Real-Time Systems
 
-YOLO - FPS:45, mAP:63.4
+YOLO - FPS: 45, mAP: 63.4
 
 於 Real-Time Detectors 雖然每秒幀數(FPS)表現普通，不過其對所有辨識種類的平均辨識率(mAP)為最高。
 
@@ -92,7 +93,21 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 
 ### The Model
 
+YOLO會將圖分成S\*S格(grid)，每個grid 有兩個bounding box 做物件偵測，其一開始偵測到的物件有7\*7\*2 = 98個，接著每個grid 會辨識該物件框所框出之物件所屬的類別，最後採用NMS將多餘的bounding box 濾除。
+
+![img9](./img/detections.png)
+
+#### Confidence
+
+Grid cell 包含目標的機率與IOU相乘。
+
+![img9](./img/confidence.png)
+
 ### The Architecture
+
+![img10](./img/model1.png)
+
+![img10](./img/model2.png)
 
 ### Training
 
@@ -106,3 +121,5 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 * [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
 * [深度學習: 物件偵測上的模型結構變化](https://chih-sheng-huang821.medium.com/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC%E4%B8%8A%E7%9A%84%E6%A8%A1%E5%9E%8B%E7%B5%90%E6%A7%8B%E8%AE%8A%E5%8C%96-e23fd928ee59)
 * [影像辨識常見的IOU、AP、mAP是什麼意思?](http://yy-programer.blogspot.com/2020/06/iouapmap.html)
+* [YOLO v1 物件偵測~論文整理](https://medium.com/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E4%BD%9C%E7%B4%A1/yolo-v1-%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-%E8%AB%96%E6%96%87%E6%95%B4%E7%90%86-935bfd51d5e0)
+* [【深度學習YOLO V1】深刻解讀YOLO V1(圖解)](https://blog.csdn.net/c20081052/article/details/80236015)
