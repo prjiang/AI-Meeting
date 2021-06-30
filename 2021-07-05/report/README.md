@@ -11,7 +11,7 @@ You Only Look Once: Unified, Real-Time Object Detection
     * [Object localization and classification](#Object-localization-and-classification)
     * [Comparison to Other Real-Time Systems](#Comparison-to-Other-Real-Time-Systems)
         * [IOU](#IOU)
-        * [AP、mAP](#AP、mAP)
+        * [AP、mAP](#APmAP)
 * [Algorithm architecture](#Algorithm-architecture)
     * [Unified Detection](#Unified-Detection)
         * [The Model](#the-model)
