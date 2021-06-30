@@ -131,17 +131,17 @@ Pr(Class | Object) -> 偵測為物件後，該物件所屬類別的probabilities
 
 ![img10](./img/yolov1_output.png)
 
-C = 20，使用PASCAL VOC 資料集，有20種類別。
-
 Bounding box 四個位置值為正規化數值 :
 
 (x, y, w, h) = bbox(x, y, w, h) / 原影像(x, y, w, h)
+
+C = 20，使用PASCAL VOC 資料集，有20種類別。
 
 Activation function 採用Leaky ReLU :
 
 ReLU會使部分神經元輸出為0，以解決Overfitting，但神經元停止後，就難以激活(Dead ReLU Problem)，因此採用Leaky ReLU 不增加計算複雜度，提升模型的學習能力。
 
-`f(x) = max(x, 0.1x)`
+`f(x) = max(0.01x, x)`
 
 ### Training
 
