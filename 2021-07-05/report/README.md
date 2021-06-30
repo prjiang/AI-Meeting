@@ -148,15 +148,15 @@ C = 20，使用 PASCAL VOC 資料集，有20種類別。
 
 #### Activation function
 
-Activation function 採用 Leaky ReLU (除了輸出層以外):
+Activation function 採用 leaky rectified linear activation (leaky ReLU):
 
 ReLU 會使部分神經元輸出為0，以解決 Overfitting，但有些神經元可能無法被激活(Dead ReLU Problem)，因此採用 Leaky ReLU 不增加計算複雜度，提升模型的學習能力。
-
-輸出層使用 linear activation，其他皆使用 leaky ReLU。
 
 ReLU 是將所有負值皆設為零；Leaky ReLU 則是將負值乘上非零斜率。
 
 ![img10](./img/leakyrelu.png)
+
+除了輸出層使用 linear activation，其他皆使用 leaky ReLU。
 
 ### Training
 
