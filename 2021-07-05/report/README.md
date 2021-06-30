@@ -164,9 +164,11 @@ ReLU 是將所有負值皆設為零；Leaky ReLU 則是將負值乘上非零斜�
 
 Pretrain 完成後，再接上隨機權重的4層 Conv Layers(分類器)、2層 F.C。
 
-![img11](./img/inference.jpg)
-
-![img11](./img/yolov1_detect.png)
+| Inference                         |
+| :-------------------------------: |
+| ![img11](./img/inference.jpg)     |
+| Detection Procedure               |
+| ![img11](./img/yolov1_detect.png) |
 
 最後輸出層進行 detection procedure 時，以Grid 包含兩個 bbox 的 confidence 乘上 Pr(Class)，形成評估 bbox 的指數。
 
