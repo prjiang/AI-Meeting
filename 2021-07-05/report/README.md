@@ -17,8 +17,9 @@ You Only Look Once: Unified, Real-Time Object Detection
         * [The Model](#the-model)
         * [Confidence](#confidence)
     * [The Architecture](#The-Architecture)
+        * [Activation function](#Activation-function)
     * [Training](#training)
-    * [Loss Function](#loss-function)
+        * [Loss Function](#loss-function)
     * [NMS (Non-max suprresed)](#NMS-Non-max-suprresed)
 * [Conclusion](#Conclusion)
 * [Reference](#reference)
@@ -100,7 +101,7 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 
 #### The Model
 
-YOLO會將影像分成S\*S格(grid)，每個 grid 有兩個 bounding box 做物件偵測，其一開始偵測到的物件有 7\*7\*2 = 98個，接著每個 grid 會辨識該物件框所框出之物件所屬的類別，最後採用 NMS 將多餘的 bounding box 濾除。
+YOLO會將影像分成 S\*S 格(grid)，每個 grid 有兩個 bounding box 做物件偵測，其一開始偵測到的物件有 7\*7\*2 = 98個，接著每個 grid 會辨識該物件框所框出之物件所屬的類別，最後採用 NMS 將多餘的 bounding box 濾除。
 
 若 grid cell 包含<b>被偵測的物件中心</b>，此 grid cell 須負責偵測該物件。
 
@@ -145,15 +146,31 @@ Bounding box 四個位置值為正規化數值 :
 
 C = 20，使用 PASCAL VOC 資料集，有20種類別。
 
-Activation function 採用 Leaky ReLU :
+#### Activation function
 
-ReLU 會使部分神經元輸出為0，以解決 Overfitting，但神經元停止後，就難以激活(Dead ReLU Problem)，因此採用 Leaky ReLU 不增加計算複雜度，提升模型的學習能力。
+Activation function 採用 Leaky ReLU (除了輸出層以外):
 
-`f(x) = max(0.01x, x)`
+ReLU 會使部分神經元輸出為0，以解決 Overfitting，但有些神經元可能無法被激活(Dead ReLU Problem)，因此採用 Leaky ReLU 不增加計算複雜度，提升模型的學習能力。
+
+輸出層使用 linear activation，其他皆使用 leaky ReLU。
+
+ReLU 是將所有負值皆設為零；Leaky ReLU 則是將負值乘上非零斜率。
+
+![img10](./img/leakyrelu.jpg)
 
 ### Training
 
-### Loss Function
+前20層 Conv Layers 是以大型 dataset(ImageNet) 進行 pretrain(特徵提取)，因此不修正此處權重。
+
+Pretrain 完成後，再接上隨機權重的4層 Conv Layers(分類器)、2層 F.C。
+
+![img11](./img/inference.jpg)
+
+![img11](./img/yolov1_detect.png)
+
+最後輸出層進行 detection procedure 時，以Grid 包含兩個 bbox 的 confidence 乘上 Pr(Class)，形成評估 bbox 的指數。
+
+#### Loss Function
 
 ### NMS (Non-max suprresed)
 
