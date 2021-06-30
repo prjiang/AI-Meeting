@@ -10,7 +10,8 @@ You Only Look Once: Unified, Real-Time Object Detection
     * [Object Detection](#Object-Detection)
     * [Object localization and classification](#Object-localization-and-classification)
     * [Comparison to Other Real-Time Systems](#Comparison-to-Other-Real-Time-Systems)
-        * [mAP](#mAP-系統對於所有辨識種類的平均辨識率)
+        * [IOU](#IOU)
+        * [AP、mAP](#AP、mAP)
 * [Algorithm architecture](#Algorithm-architecture)
     * [Unified Detection](#Unified-Detection)
         * [The Model](#the-model)
@@ -64,7 +65,7 @@ YOLO - FPS: 45, mAP: 63.4
 | :---------------------------: | :------------------------------: |
 | ![img2](./img/comparison.jpg) | ![img2](./img/ErrorAnalysis.jpg) |
 
-#### mAP: 系統對於所有辨識種類的平均辨識率。
+#### IOU
 
 IOU = 交集a / 聯集a，其值介於0~1之間。
 
@@ -73,6 +74,8 @@ IOU = 交集a / 聯集a，其值介於0~1之間。
 | bounding box            | IOU                    |
 | :---------------------: | :--------------------: |
 | ![img3](./img/bird.png) | ![img4](./img/IOU.png) |
+
+#### AP、mAP
 
 precision: 所有被系統預測為鴨子的結果中，真的是鴨子的比例。
 
