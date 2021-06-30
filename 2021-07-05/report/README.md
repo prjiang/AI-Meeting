@@ -119,11 +119,19 @@ Pr(Class | Object) -> 偵測為物件後，該物件所屬類別的probabilities
 
 ### The Architecture
 
+輸入尺寸調整至448\*448，以增加提取解析度。
+
+神經網路參考GoogleNet。使用1\*1卷積(降維)對3\*3卷積核運算做壓縮，以減少計算參數。
+
+最後輸出tensor 為 7 \* 7 \*(2 \* 5 \+ 20) = 7 \* 7 \* 30
+
+C = 20，使用PASCAL VOC 資料集，有20種類別。
+
 ![img10](./img/model1.png)
 
-| Model                      | Output                            |
-| :------------------------: | :-------------------------------: |
-| ![img10](./img/model2.png) | ![img10](./img/yolov1_output.png) |
+![img10](./img/model2.png)
+
+![img10](./img/yolov1_output.png)
 
 ### Training
 
