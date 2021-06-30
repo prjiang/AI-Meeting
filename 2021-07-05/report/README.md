@@ -20,6 +20,7 @@ You Only Look Once: Unified, Real-Time Object Detection
     * [Training](#training)
     * [Loss Function](#loss-function)
     * [NMS (Non-max suprresed)](#NMS-Non-max-suprresed)
+* [Conclusion](#Conclusion)
 * [Reference](#reference)
 
 <br>
@@ -31,7 +32,7 @@ You Only Look Once: Unified, Real-Time Object Detection
 Algorithm of The YOLO Detection System 其流程主要分為三個步驟 :
 1. 將影像大小調整至448\*448
 2. 執行卷積神經網路進行物件偵測與分類
-3. 透過NMS (Non-max suprresed) 方式框出影像中物件之位置，輸出最終結果
+3. 透過 NMS (Non-max suprresed) 方式框出影像中物件之位置，輸出最終結果
 
 ![img0](./img/ObjectDetection.png)
 
@@ -45,11 +46,11 @@ Object detection 運作步驟 :
 
 * two-stage: 將步驟1, 2分開執行，輸入之影像先藉由物件偵測產生物件框後，再透過 classification 進行分類。performance 通常較好，若偵測出的物件過多，除非有很強的GPU平行運算，否則運算時間將會慢許多。
 
-    ex. RCNN
+    e.g. RCNN
 
 * one-stage: 輸入之影像透過神經網路同時進行物件偵測與辨識。Single Shot Detector (SSD)，一個深度神經網路便可完成所有物件偵測。運算速度較 two-stage 快，但 performance 相對沒有很好，不過後續研究結構的複雜化使其 performance 愈來愈好甚至超越 two-stage。
 
-    ex. YOLO
+    e.g. YOLO
 
 ![img1](./img/stage.png)
 
@@ -99,14 +100,16 @@ mAP (mean average precision): 系統對於所有辨識種類(鴨子、貓、狗�
 
 #### The Model
 
-YOLO會將影像分成S\*S格(grid)，每個grid 有兩個bounding box 做物件偵測，其一開始偵測到的物件有7\*7\*2 = 98個，接著每個grid 會辨識該物件框所框出之物件所屬的類別，最後採用NMS將多餘的bounding box 濾除。
+YOLO會將影像分成S\*S格(grid)，每個 grid 有兩個 bounding box 做物件偵測，其一開始偵測到的物件有 7\*7\*2 = 98個，接著每個 grid 會辨識該物件框所框出之物件所屬的類別，最後採用 NMS 將多餘的 bounding box 濾除。
 
-其最後輸出tensor 的維度 : S \* S \* (B \* 5 \+ C)
+若 grid cell 包含<b>被偵測的物件中心</b>，此 grid cell 須負責偵測該物件。
+
+其最後輸出 tensor 的維度 : S \* S \* (B \* 5 \+ C)
 
 * S : 網格數量
-* B : 每個grid 預測物件的bounding box 數 (YOLO v1 set B=2)
+* B : 每個 grid 預測物件的 bounding box 數 (YOLO v1 set B=2)
 * 5 : 物件中心 (x, y)、寬高 (w, h)、confidence(是否為物件)
-* C : 類別數量(兩個bounding box 的類別機率)
+* C : 類別數量(兩個 bounding box 的類別機率)
 
 ![img9](./img/detections.png)
 
@@ -114,9 +117,9 @@ YOLO會將影像分成S\*S格(grid)，每個grid 有兩個bounding box 做物件
 
 Grid cell 包含目標的機率與IOU相乘。
 
-Pr(Object) -> bounding box 裡可能是物件的probabilities
+Pr(Object) -> bounding box 裡可能是物件的 probabilities
 
-Pr(Class | Object) -> 偵測為物件後，該物件所屬類別的probabilities
+Pr(Class | Object) -> 偵測為物件後，該物件所屬類別的 probabilities
 
 ![img9](./img/confidence.png)
 
@@ -124,9 +127,11 @@ Pr(Class | Object) -> 偵測為物件後，該物件所屬類別的probabilities
 
 輸入尺寸調整至448\*448，以增加提取解析度。
 
-神經網路參考GoogleNet。使用1\*1卷積(降維)對3\*3卷積核運算做壓縮，以減少計算參數。
+神經網路參考GoogleNet，24層 Conv Layers、2層F.C。
 
-最後輸出tensor 為 7 \* 7 \*(2 \* 5 \+ 20) = 7 \* 7 \* 30
+不同的是 YOLO 使用 1\*1 卷積(降維)對 3\*3 卷積核運算做壓縮，以減少計算參數。取代 GoogleNet 的 Inception modules。
+
+最後輸出 tensor 為 7 \* 7 \*(2 \* 5 \+ 20) = 7 \* 7 \* 30
 
 ![img10](./img/model1.png)
 
@@ -138,11 +143,11 @@ Bounding box 四個位置值為正規化數值 :
 
 (x, y, w, h) = bbox(x, y, w, h) / 原影像(x, y, w, h)
 
-C = 20，使用PASCAL VOC 資料集，有20種類別。
+C = 20，使用 PASCAL VOC 資料集，有20種類別。
 
-Activation function 採用Leaky ReLU :
+Activation function 採用 Leaky ReLU :
 
-ReLU會使部分神經元輸出為0，以解決Overfitting，但神經元停止後，就難以激活(Dead ReLU Problem)，因此採用Leaky ReLU 不增加計算複雜度，提升模型的學習能力。
+ReLU 會使部分神經元輸出為0，以解決 Overfitting，但神經元停止後，就難以激活(Dead ReLU Problem)，因此採用 Leaky ReLU 不增加計算複雜度，提升模型的學習能力。
 
 `f(x) = max(0.01x, x)`
 
@@ -151,6 +156,10 @@ ReLU會使部分神經元輸出為0，以解決Overfitting，但神經元停止�
 ### Loss Function
 
 ### NMS (Non-max suprresed)
+
+<br>
+
+## Conclusion
 
 <br>
 
