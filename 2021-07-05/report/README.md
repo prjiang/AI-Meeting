@@ -49,7 +49,7 @@ Object detection 運作步驟 :
 
     e.g. RCNN
 
-* one-stage: 輸入之影像透過神經網路同時進行物件偵測與辨識。Single Shot Detector (SSD)，一個深度神經網路便可完成所有物件偵測。運算速度較 two-stage 快，但 performance 相對沒有很好，不過後續研究結構的複雜化使其 performance 愈來愈好甚至超越 two-stage。
+* one-stage: 輸入之影像透過神經網路同時進行物件偵測與辨識。運算速度較 two-stage 快，但 performance 相對沒有很好，不過後續研究結構的複雜化使其 performance 愈來愈好甚至超越 two-stage。
 
     e.g. YOLO
 
@@ -189,4 +189,5 @@ Pretrain 完成後，再接上隨機權重的4層 Conv Layers(分類器)、2層 
 * [YOLO v1 物件偵測~論文整理](https://medium.com/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E4%BD%9C%E7%B4%A1/yolo-v1-%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-%E8%AB%96%E6%96%87%E6%95%B4%E7%90%86-935bfd51d5e0)
 * [深度學習YOLO V1 深刻解讀YOLO V1(圖解)](https://blog.csdn.net/c20081052/article/details/80236015)
 * [物件偵測 S4: YOLO v1 簡介](https://yuweichiu.github.io/%E4%BA%BA%E5%AD%B8%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/p0005-Object-Detection-S4-YOLO-v1/)
+* [常用啟用函式](https://www.itread01.com/content/1546354994.html)
 * [圖解一階段物件偵測算法_Part01 - YOLOv1](https://www.youtube.com/watch?v=sq_OfIhb5Oc)
