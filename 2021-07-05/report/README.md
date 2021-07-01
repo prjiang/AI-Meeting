@@ -194,8 +194,8 @@ w、h 取平方根 : bbox 的大小對 bias 的影響比例不同，因此取平
 
 物件偵測時一個物件可能被很多物件框選中，因此採用 NMS 將多餘的物件框濾除。
 
-1. 將 confidence 很低的 bbox 去除，並選出 confidence 最高的 bbox 加入"確定是物件集合" (selected objects)。
-2. 其他 bbox 與選出的 bbox 計算IOU，若 bbox 的IOU結果大於設定好之閾值，其 confidence 會設定為0。
+1. 將 confidence 很低的 bbox 去除，並選出 confidence 最高的 bbox 加入"確定是物件集合" (selected objects)
+2. 其他 bbox 與選出的 bbox 計算IOU，若 bbox 的IOU結果大於設定好之閾值，其 confidence 會設定為0
 
 Repeat 1、2 步驟直到沒有 bbox 的 confidence > 0，selected objects 為最後結果，NMS結束。
 
