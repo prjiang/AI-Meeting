@@ -176,7 +176,7 @@ Pretrain 完成後，再接上隨機權重的4層 Conv Layers(分類器)、2層 
 
 採用平方誤差和 (sum-squared error) 做 loss function。
 
-誤差有分類誤差(class error)、邊界框誤差(localization error)。
+誤差有分類誤差(class error)、邊界框定位誤差(localization error)。
 
 沒有物件的邊界框其 confidence 很低，會將最後指標推向幾乎等於0，導致誤差梯度過大，使整個損失函數被沒有物件的邊界框主導，造成損失不穩定且難以訓練好。
 
@@ -204,6 +204,15 @@ Repeat 1、2 步驟直到沒有 bbox 的 confidence > 0，selected objects 為�
 <br>
 
 ## Conclusion
+
+YOLO v1 的速度較 two-stage 模型快上好幾倍(45 fps)，且 mAP(63.4) 也比 R-CNN 好很多。
+
+但其也有不少缺點 :
+
+1. 每個格子只預測兩個框，且一個框只有一個分類，因此對於群體的小物件偵測能力不佳 (e.g. 一群鳥)。
+2. 由訓練資料學習辨識與邊界框，對於新的、長寬比不常見之物件難以偵測。
+3. 經過多個降維，在特徵解析度粗糙的 feature map 上預測邊界框，其泛化能力差。
+4. 於loss function上，邊界框定位誤差為影響預測效果的主因，bounding box 的大小在 loss 的反應上不佳，小的 bbox 對 IOU 影響較大。
 
 <br>
 
