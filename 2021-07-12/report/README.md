@@ -20,7 +20,7 @@ You Only Look Once: Unified, Real-Time Object Detection
         * [Activation function](#Activation-function)
     * [Training](#training)
         * [Loss Function](#loss-function)
-    * [NMS (Non-max suprresed)](#NMS-Non-max-suprresed)
+    * [NMS (Non-max suppression)](#NMS-Non-max-suppression)
 * [Conclusion](#Conclusion)
 * [Reference](#reference)
 
@@ -33,7 +33,7 @@ You Only Look Once: Unified, Real-Time Object Detection
 Algorithm of The YOLO Detection System 其流程主要分為三個步驟 :
 1. 將影像大小調整至448\*448
 2. 執行卷積神經網路進行物件偵測與分類
-3. 透過 NMS (Non-max suprresed) 方式框出影像中物件之位置，輸出最終結果
+3. 透過 NMS (Non-max suppression) 方式框出影像中物件之位置，輸出最終結果
 
 ![img1](./img/ObjectDetection.png)
 
@@ -190,7 +190,7 @@ w、h 取平方根 : bbox 的大小對 bias 的影響比例不同，因此取平
 
 ![img11.3](./img/bbox-bias.jpg)
 
-### NMS (Non-max suprresed)
+### NMS (Non-max suppression)
 
 物件偵測時一個物件可能被很多物件框選中，因此採用 NMS 將多餘的物件框濾除。
 
