@@ -10,3 +10,4 @@
 
 * Run the yolo example using the package and source code.
 * Use colab to implement cifar10. Understand alexnet parameters. Overfitting solution.
+* Iris classification.
