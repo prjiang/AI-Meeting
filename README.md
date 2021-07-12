@@ -1,4 +1,4 @@
-# Seminar in AI
+# AISeminar
 
 ## Meeting record of the seminar
 
