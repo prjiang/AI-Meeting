@@ -19,7 +19,7 @@
 | [2021-04-26](./2021-04-26) | The Kaggle competition "Titanic - Machine Learning from Disaster". |
 | [2021-05-03](./2021-05-03) | The Kaggle competition "Titanic - Machine Learning from Disaster". |
 | [2021-05-10](./2021-05-10) | The Random Forest model use in "Titanic" project. |
-| [2021-05-24](./2021-05-24) | Tutorial of Application of OpenCV and image processing. (img linear filters...) |
+| [2021-05-24](./2021-05-24) | Tutorial of Application of OpenCV and image processing. (hw: img linear filters...) |
 | [2021-05-31](./2021-05-31) | Architecture of Convolutional Neural Network. |
 | [2021-06-28](./2021-06-28) | Discuss the content of the next meeting report. (Architecture of YOLO v1) |
 | [2021-07-12](./2021-07-12) | The algorithm architecture of YOLO v1: Real Time Object Detection. |
