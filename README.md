@@ -1,5 +1,7 @@
 # Seminar in AI
 
+## Meeting record of the seminar
+
 | date                       | content          |
 | :------------------------- | :--------------- |
 | [2020-09-30](./2020-09-30) | RaspberryPi4B-OS |
