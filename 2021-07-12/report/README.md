@@ -134,6 +134,8 @@ Pr(Class | Object) : 偵測為物件後，該物件所屬類別的 probabilities
 
 最後輸出 tensor 為 7 \* 7 \*(2 \* 5 \+ 20) = 7 \* 7 \* 30
 
+C = 20，使用 PASCAL VOC 資料集，有20種類別。
+
 ![img8.1](./img/model1.png)
 
 ![img8.2](./img/model2.png)
@@ -143,8 +145,6 @@ Pr(Class | Object) : 偵測為物件後，該物件所屬類別的 probabilities
 Bounding box 四個位置值為正規化數值 :
 
 (x, y, w, h) = bbox(x, y, w, h) / 原影像(x, y, w, h)
-
-C = 20，使用 PASCAL VOC 資料集，有20種類別。
 
 #### Activation function
 
