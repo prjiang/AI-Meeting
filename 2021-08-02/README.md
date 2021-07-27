@@ -1,4 +1,4 @@
-# 2021-07-28
+# 2021-08-02
 
 ## Reports
 * [Face mask detection](https://colab.research.google.com/drive/1aPEhZK3Cvil__CzxPLnNUrdH9Gxkgeyw?usp=sharing)
