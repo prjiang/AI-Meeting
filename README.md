@@ -26,3 +26,4 @@
 | [2021-06-28](./2021-06-28) | Discuss the content of the next meeting report. (Architecture of YOLO v1) |
 | [2021-07-12](./2021-07-12) | The algorithm architecture of YOLO v1: Real Time Object Detection. |
 | [2021-07-19](./2021-07-19) | Run the yolo v1 example using the package. |
+| [2021-08-02](./2021-08-02) | Face mask detection |
