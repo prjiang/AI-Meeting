@@ -26,9 +26,8 @@ transforms = transforms.Compose([
 計算 mean、std :
 
 ```python
-loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                        batch_size=len(train_dataset)
-                                    )
+loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=len(train_dataset))
+
 data = next(iter(loader))
 data_mean = data[0].mean()      # tensor(0.1307)
 data_std = data[0].std()        # tensor(0.3081)
