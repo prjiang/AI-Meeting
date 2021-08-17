@@ -28,3 +28,4 @@
 | [2021-07-19](./2021-07-19) | Run the yolo v1 example using the package. |
 | [2021-08-02](./2021-08-02) | Face mask detection |
 | [2021-08-09](./2021-08-09) | Neural Network optimization |
+| [2021-08-16](./2021-08-16) | How to get various attention images with GradCAM. |
