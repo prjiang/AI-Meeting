@@ -4,7 +4,7 @@
 
 ### TensorFlow Programming
 
-* [Gender_Voice](https://colab.research.google.com/drive/1-SS7N3lbG-mFlPJwvKYhq0Uzn0mG316b?usp=sharing)
+* [Gender_Voice](https://github.com/prjiang/AI-Seminar/blob/main/2020-12-02/GenderVoice-TensorFlowProgramming.ipynb)
 * [Breast_Cancer](https://github.com/GodZhan/Breast_Cancer)
 
 <br>
