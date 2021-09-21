@@ -1,6 +1,6 @@
 # 2021-05-10
 ## Report
-* The Random Forest model use in ["Titanic" project](https://github.com/prjiang/Seminar-in-AI/blob/main/2021-05-10/report/Titanic.ipynb).
+* The Random Forest model use in ["Titanic" project](https://colab.research.google.com/drive/1cMD7nnRtgnw-kUQMSUfKD86OV75vQAOG?usp=sharing).
 
 <br>
 
