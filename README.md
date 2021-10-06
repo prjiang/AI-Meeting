@@ -32,3 +32,4 @@
 | [2021-08-23](./2021-08-23) | Use the pretrained VGG16 model for cat and dog classification.(+ GradCam) |
 | [2021-09-03](./2021-09-03) | Vehicle Detection using YOLOv3 |
 | [2021-09-15](./2021-09-15) | Discuss the subject of Graduation Project. (about Pose Detection) |
+| [2021-09-29](./2021-09-29) | Discuss the subject of Graduation Project. (about AI Competition - character recognition) |
