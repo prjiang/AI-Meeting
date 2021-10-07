@@ -33,3 +33,4 @@
 | [2021-09-03](./2021-09-03) | Vehicle Detection using YOLOv3 |
 | [2021-09-15](./2021-09-15) | Discuss the subject of Graduation Project. (about Pose Detection) |
 | [2021-09-29](./2021-09-29) | Discuss the subject of Graduation Project. (about AI Competition - character recognition) |
+| [2021-10-06](./2021-10-06) | LSTM to learn three-char time steps to one-char mapping. |
