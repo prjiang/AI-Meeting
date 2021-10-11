@@ -6,4 +6,4 @@
 
 ## Prepare the report
 
-* [DAT-RNN: Trajectory Prediction with Diverse Attention](https://ieeexplore.ieee.org/document/9356297)
+* [DAT-RNN: Trajectory Prediction with Diverse Attention](https://sci-hub.se/10.1109/icmla51294.2020.00233)
