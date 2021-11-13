@@ -35,3 +35,4 @@
 | [2021-09-29](./2021-09-29) | Discuss the subject of Graduation Project. (about AI Competition - character recognition) |
 | [2021-10-06](./2021-10-06) | LSTM to learn three-char time steps to one-char mapping. |
 | [2021-10-20](./2021-10-20) | Use Yolov3 Object Detector on Ubuntu 20.04. |
+| [2021-11-03](./2021-11-03) | SS-LSTM: A Hierarchical LSTM Model for Pedestrian Trajectory Prediction - I |
