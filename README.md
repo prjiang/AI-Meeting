@@ -1,6 +1,6 @@
 # AI-Seminar
 
-## Meeting record of the seminar
+## Meeting minutes of the seminar
 
 | date                       | content          |
 | :------------------------- | :--------------- |
