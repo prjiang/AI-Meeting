@@ -1,6 +1,4 @@
-# AI-Meeting
-
-## Meeting minutes of the seminar
+# Meeting minutes
 
 | date                       | content          |
 | :------------------------- | :--------------- |
