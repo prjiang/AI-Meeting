@@ -1,4 +1,4 @@
-# AI-Seminar
+# AI-Meeting
 
 ## Meeting minutes of the seminar
 
